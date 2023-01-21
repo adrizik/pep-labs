@@ -1,1 +1,1 @@
-select * from employee order by asc; 
+SELECT * FROM character ORDER BY last_name ASC, first_name; 
