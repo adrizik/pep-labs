@@ -35,7 +35,7 @@ import java.sql.Statement;
  *     NOTE: the [] in the "Adding a column" syntax means that the constraint is optional
  *
  *
- *    Additional reference material: https://www.w3schools.com/sql/sql_alter.asp
+ *    Additional reference material: https://www.revpro open StringMethodsw3schools.com/sql/sql_alter.asp
  *
  */
 public class AlterATable {
