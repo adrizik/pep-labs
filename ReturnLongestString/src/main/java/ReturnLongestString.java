@@ -12,7 +12,7 @@ public class ReturnLongestString {
             int index = 0;
             int elementLength = arr[0].length();
 
-            for(int i=1; i< arr.length; i++) {
+            for(int i = 1; i< arr.length; i++) {
                 if(arr[i].length() > elementLength) {
                     index = i; elementLength = arr[i].length();
                 }
