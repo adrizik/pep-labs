@@ -71,10 +71,8 @@ public class FlightDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setInt(id, id);
-            preparedStatement.setString(id, sql);
-            
-
+            preparedStatement.setInt(1, id);
+   
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Flight flight = new Flight(rs.getInt("flight_id"), rs.getString("departure_city"),
