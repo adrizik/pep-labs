@@ -144,6 +144,7 @@ public class FlightDAO {
      *
      * @param id a flight ID.
      * @param flight a flight object.
+     * @return 
      */
     public void updateFlight(int id, Flight flight){
         Connection connection = ConnectionUtil.getConnection();
