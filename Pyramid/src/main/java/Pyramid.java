@@ -28,13 +28,14 @@ public class Pyramid {
      */
     public String returnPyramid(int n){
 
-        for (int i = 1; i < n ; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.println("* ");
+        String star = "";
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j < i; j++){
+                star += "*";
             }
-            System.out.println();
+            star += "\n";
         }
-        
-        return returnPyramid(n);
+        return star;
+    
     }
 }
