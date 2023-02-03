@@ -12,8 +12,7 @@ public class OtherStringMethods {
      */
     public String partOfString(String s, int start, int end){
         
-        
-        return "";
+        return s.substring(start, end);
     }
 
     /**
@@ -28,6 +27,13 @@ public class OtherStringMethods {
      * and 0 if s1 is equivalent to s2.
      */
     public int compareLexigraphically(String s1, String s2){
+        
+        if(s1.compareTo(s2) > 0){
+            return 1;
+        } else if(s1.compareTo(s2) < 0) {
+            return -1;
+        }
+        
         return 0;
     }
 
