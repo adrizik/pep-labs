@@ -1,4 +1,4 @@
-
+import javax.swing.event.SwingPropertyChangeSupport;
 
 public class InsertPosition {
 
@@ -22,6 +22,6 @@ public class InsertPosition {
             }
         }
         
-        return nums.length;
+        return ;
     }
 }
