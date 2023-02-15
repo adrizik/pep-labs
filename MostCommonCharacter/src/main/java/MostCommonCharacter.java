@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,15 +14,25 @@ public class MostCommonCharacter {
         Map<Character, Integer> character_count = new HashMap<>();
 
         for(int i = 0; i < str.length(); i++){
-            char key = str.charAt(i);
-            if(character_count.containsKey(key)){
-                character_count.put(key, character_count.get(key) + 1);
+            char c = str.charAt(i);
+            if(character_count.containsKey(c)){
+                character_count.put(c, character_count.get(c) + 1);
 
             }else{
-                character_count.put(key, 1);
+                character_count.put(c, 1);
             }
         }
-        
-        return ' ';
+
+        int max_count = 0;
+        char most_common = '\0';
+        for(Map.Entry<Character, Integer> entry : character_count.entrySet()){
+            if(entry.getValue() > max_count){
+                max_count = entry.getValue();
+                most_common = entry.getKey();
+
+            }
+        }
+
+        return most_common;
     }
 }
